@@ -16,8 +16,8 @@ def edist(p1,p2):
 	dist = esum ** (1/2)
 	return dist
 
-for i in pair:
-	points = i.split(' ')
+for point in pair:
+	points = point.split(' ')
 	edis = edist(points[0],points[1])
 	edis = round(edis,4)
 	stri = str(points) + '\t-\t' + str(edis) + '\n'
