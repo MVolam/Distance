@@ -1,5 +1,3 @@
-print("euclidean")
-
 f = open("input.txt")
 pairs = f.read()
 f.close
@@ -20,11 +18,9 @@ def edist(p1,p2):
 
 for i in pair:
 	points = i.split(' ')
-	print(points, end='\t- ')
 	edis = edist(points[0],points[1])
 	edis = round(edis,4)
 	stri = str(points) + '\t-\t' + str(edis) + '\n'
 	ans.write(stri)
-	print(edis)
 
 ans.close()
